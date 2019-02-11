@@ -16,7 +16,7 @@
   :version "0.1"
   :author "Windymelt"
   :license ""
-  :depends-on ()
+  :depends-on (:uiop)
   :components ((:module "src"
                 :components
                 ((:file "trivial-shell"))))

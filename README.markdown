@@ -1,5 +1,7 @@
 # Trivial-Shell
 
+Trivial variables/functions useful for scripting with Roswell.
+
 ## Usage
 
 ## Installation
