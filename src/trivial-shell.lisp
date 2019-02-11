@@ -10,15 +10,15 @@
 (in-package :trivial-shell)
 
 (defparameter *$0*
-  *load-pathname*
-  "An alias for *LOAD-PATHNAME*. The path for running image.")
+  *load-truename*
+  "An alias for *LOAD-TRUENAME*. The path for running image.")
 
 (defparameter *$0-dir*
-  (make-pathname :defaults *load-pathname* :name nil :type nil)
+  (make-pathname :defaults *load-truename* :name nil :type nil)
   "The directory path which contains *$0*.")
 
 (defparameter *$0-basename*
-  (make-pathname :defaults *load-pathname* :directory nil)
+  (make-pathname :defaults *load-truename* :directory nil)
   "The name for running image, without directory part.")
 
 (defun move-into-script-directory ()
